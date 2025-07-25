@@ -1,8 +1,6 @@
 # ServiceNow Administration Fundamentals - Assignment Instructions
 
-# ServiceNow Administration Fundamentals - Workload 1 Instructions
-
-## Assignment Overview
+# Overview
 
 **Company Context**: You're a ServiceNow Administrator at Uber, where reliable network infrastructure is critical for maintaining ride-hailing services across hundreds of cities worldwide.
 
@@ -17,29 +15,35 @@ Your task is to fix the system so that urgent network incidents trigger immediat
 ## Current System State
 
 Your instance includes:
+
 - Flow Designer workflow: "Kura Workload 1"
 - Email notification: "Incident Assignment Notification"
-- User group: "Networking Operations" 
+- User group: "Networking Operations"
 - SLA definition: "Urgency High" (1 hour response time)
 
 ## Assignment Objectives
 
 ### 1. Fix the Flow Designer Workflow
+
 - What is the status of "Kura Workload 1" flow?
 - The SLA "Urgency High" SLA required engineers to respond within 1 hour. Is the flow currently being triggered and sending notifications for 'Critical' priority incidents?
 - Ensure the workflow connects to the notification system
 
 ### 2. Connect Flow to Email Notification System
+
 The flow should trigger the "Incident Assignment Notification" which should be sent to the "Network Operations" group.
+
 - Is the notification correctly configured to send emails to the "Network Operations" group?
 - Test that notifications are actually sent when the workflow triggers
 
 ### 3. Verify User Group Configuration
+
 - Ensure the notification references the correct group name that exists in your system
 - Fix any name inconsistencies between groups and notifications
 - Does the "Network Operations" group have any members assigned?
 
 ### 4. Test and Validate the Working System
+
 - Create test incidents with network category and critical priority
 - Verify emails are actually sent and received
 - Confirm the fixed workflow prevents SLA breaches through timely alerts
@@ -49,13 +53,15 @@ The flow should trigger the "Incident Assignment Notification" which should be s
 **Hypothetical Scenario:** Your company operates globally across multiple time zones. Critical incidents often occur outside business hours when senior engineers aren't available. The current escalation process follows a rigid hierarchy that doesn't account for engineer expertise, current availability, or incident complexity, leading to prolonged resolution times.
 
 In your README.md, include an "AI Scenario" section explaining how an AI agent could enhance your incident notification system to:
+
 - Intelligently route incidents based on engineer expertise and availability
-- Consider time zones and current workloads when selecting responders  
+- Consider time zones and current workloads when selecting responders
 - Learn from historical resolution patterns to improve future routing decisions
 
 ## Deliverables
 
 ### 1. GitHub Repository Structure
+
 ```
 /your-repo-name
 ├── README.md
@@ -64,7 +70,9 @@ In your README.md, include an "AI Scenario" section explaining how an AI agent c
 ```
 
 ### 2. Update Set Requirements
+
 Your update set MUST contain these **records**:
+
 - Working Flow Designer workflow records ("Kura WL1")
 - **Actual email records from sys_email table (proof emails were sent)**
 - User group records for "Network Operations"
@@ -72,6 +80,7 @@ Your update set MUST contain these **records**:
 - All supporting table entries that make the system functional
 
 ### 3. README.md Content Requirements
+
 - **System Overview**: Description of the working incident notification system
 - **Implementation Steps**: How you fixed the workflow and configured notifications
 - **Architecture Diagram**: Visual representation of the complete system flow
