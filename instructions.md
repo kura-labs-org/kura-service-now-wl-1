@@ -1,8 +1,18 @@
+# ServiceNow Administration Fundamentals - Assignment Instructions
+
 # ServiceNow Administration Fundamentals - Workload 1 Instructions
 
 ## Assignment Overview
 
-You have been provided with a ServiceNow instance containing a partially configured incident management workflow. Your task is to fix the system so that urgent network incidents trigger immediate email notifications to IT engineers, preventing SLA breaches.
+**Company Context**: You're a ServiceNow Administrator at Uber, where reliable network infrastructure is critical for maintaining ride-hailing services across hundreds of cities worldwide.
+
+**Your Role**: As a junior ServiceNow admin on the IT Operations team, you've been tasked with fixing a critical gap in the incident management system that supports Uber's network infrastructure.
+
+**Why This Matters**: Last month, a critical network outage in the San Francisco data center went unnoticed for 2 hours because the notification system wasn't working properly, causing widespread service disruptions and affecting thousands of riders and drivers. The incident resulted in significant revenue loss and regulatory scrutiny.
+
+**The Scenario**: Your manager discovered that critical network incidents aren't triggering email notifications to the Network Operations team. The system was supposed to automatically alert engineers within minutes of a critical incident being created, but notifications aren't being sent. You need to investigate and fix whatever is preventing the notification system from working before the next critical incident occurs.
+
+Your task is to fix the system so that urgent network incidents trigger immediate email notifications to IT engineers, preventing SLA breaches.
 
 ## Current System State
 
