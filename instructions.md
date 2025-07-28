@@ -14,14 +14,6 @@ Review ServiceNow's [Priority Lookup Rules](https://www.servicenow.com/docs/bund
 
 Your task is to fix the system so that urgent network incidents trigger immediate email notifications to IT engineers, preventing SLA breaches.
 
-## Current System State
-
-Your instance includes:
-- Flow Designer workflow: "Kura Workload 1"
-- Email notification: "Incident Assignment Notification"
-- User group: "Networking Operations" 
-- SLA definition: "Urgency High" (1 hour response time)
-
 ## Assignment Objectives
 
 ### 1. Configure the Flow Properly
