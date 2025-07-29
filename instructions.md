@@ -20,8 +20,9 @@ Your task is to fix the system so that urgent network incidents trigger immediat
 
 ### 1. Configure the Flow Properly
 
-Configure the flow to trigger notifications for critical network incidents.
-
+Remediate the existing workflow 'Kura Workload 1' to trigger notifications for critical network incidents.
+- Give the workflow a business-friendly name
+  
 ### 2. Ensure Notifications Reach the Proper Team
 
 Ensure the notification system alerts the correct team when critical incidents occur.
@@ -63,7 +64,6 @@ Your update set MUST contain these **records**:
 - **Actual email records from sys_email table (proof emails were sent)**
 - User group records for "Network Operations"
 - **Test incident records demonstrating the working system**
-- All supporting table entries that make the system functional
 - Name your xml file **service-now-urgent-incident-notification-workflow.xml**
 
 #### Creating Your Update Set
