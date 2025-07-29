@@ -1,4 +1,6 @@
-# ServiceNow Administration Fundamentals - Assignment Instructions
+# Kura - ServiceNow Administration Fundamentals - Workload 1
+
+## Implementing an Urgent Incident Notification Workflow for Network Operations
 
 ## Overview
 
@@ -17,12 +19,15 @@ Your task is to fix the system so that urgent network incidents trigger immediat
 ## Assignment Objectives
 
 ### 1. Configure the Flow Properly
+
 Configure the flow to trigger notifications for critical network incidents.
 
 ### 2. Ensure Notifications Reach the Proper Team
+
 Ensure the notification system alerts the correct team when critical incidents occur.
 
 ### 3. Test and Validate the Working System
+
 - Create test incidents with **network category and critical priority**
 - Verify emails are actually sent and received
 - Confirm the fixed workflow prevents SLA breaches through timely alerts
@@ -32,6 +37,7 @@ Ensure the notification system alerts the correct team when critical incidents o
 **Hypothetical Scenario:** Your company operates globally across multiple time zones. Critical incidents often occur outside business hours when senior engineers aren't available. The current escalation process follows a rigid hierarchy that doesn't account for engineer expertise, current availability, or incident complexity, leading to prolonged resolution times.
 
 In your README.md, include an "AI Scenario" section explaining how an AI agent could enhance your incident notification system to:
+
 - Intelligently route incidents based on engineer expertise and availability
 - Consider time zones and current workloads when selecting responders
 - Learn from historical resolution patterns to improve future routing decisions
@@ -39,21 +45,26 @@ In your README.md, include an "AI Scenario" section explaining how an AI agent c
 ## Deliverables
 
 ### 1. GitHub Repository Structure
+
+**USE THE FILES NAMES BELOW**
+
 ```
-/your-repo-name
+/service-now-urgent-incident-notification-workflow
 ├── README.md
-├── kura-workload-complete.xml (update set file)
+├── urgent-incident-notification-workflow.xml (update set file)
 ├── Diagram.png (Draw.io architecture diagram)
 ```
 
 ### 2. Update Set Requirements
 
 Your update set MUST contain these **records**:
+
 - Working Flow Designer workflow records ("Kura WL1")
 - **Actual email records from sys_email table (proof emails were sent)**
 - User group records for "Network Operations"
 - **Test incident records demonstrating the working system**
 - All supporting table entries that make the system functional
+- Name your xml file **service-now-urgent-incident-notification-workflow.xml**
 
 #### Creating Your Update Set
 
@@ -66,10 +77,17 @@ Your update set MUST contain these **records**:
 5. **Hint**: You can add a flow to an update set by opening the flow and clicking the ellipses button next to 'edit flow' button and clicking 'force save'
 
 ### 3. README.md Content Requirements
+
 - **System Overview**: Description of the working incident notification system
 - **Implementation Steps**: How you fixed the workflow and configured notifications
 - **Architecture Diagram**: Visual representation of the complete system flow. Use Draw.io
 - **AI Scenario**: How AI agents could enhance incident routing (100-150 words)
+- **Name your markdow file README.md**
+
+### 4. Diagram Requirements
+
+- Create a **Draw.io** architecture diagram showing the complete incident notification workflow
+- Upload the diagram as **Diagram.png** in your repository
 
 ## Submission Instructions
 
