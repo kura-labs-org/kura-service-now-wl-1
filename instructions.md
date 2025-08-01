@@ -64,7 +64,7 @@ Your update set MUST contain these **records**:
 - **Actual email records from sys_email table (proof emails were sent)**
 - User group records for "Network Operations"
 - **Test incident records demonstrating the working system**
-- Name your xml file **service-now-urgent-incident-notification-workflow.xml**
+- Name your xml file **urgent-incident-notification-workflow.xml**
 
 #### Creating Your Update Set
 
